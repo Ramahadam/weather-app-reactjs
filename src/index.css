@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h2 {
+    @apply text-xl md:text-2xl text-center md:text-left font-bold md:font-semibold mb-6;
+  }
+}
+
+section {
+  @apply md:p-10 md:max-w-6xl mx-auto  mt-32 md:mt-0;
+}
+
+.container {
+  @apply md:p-10 md:max-w-6xl mx-auto flex flex-col space-y-10 md:space-y-0 md:flex-row items-center justify-between;
+}
+
+form {
+  @apply flex items-center justify-between bg-white rounded-3xl py-1 px-6 shadow-lg shadow-gray-200 min-h-fit;
+}
+
+.hero__container {
+  @apply flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-10  justify-center;
+}
+
+.hero__card {
+  @apply shadow-gray-200 p-6 md:p-10 mx-10 md:mx-0 rounded-2xl hover:scale-105 duration-300 transition-all;
+}
+
+.hero__card--footer {
+  @apply grid md:grid-cols-2 md:space-x-2 md:grid-rows-2 gap-2 lg:grid-rows-1 lg:grid-cols-3 md:space-y-0 space-y-6 w-full mt-8;
+}
+
+.week_container {
+  @apply grid justify-items-center grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 gap-y-4 gap-x-0 md:gap-x-2;
+}
+.week__card {
+  @apply flex flex-col justify-center items-center gap-y-4 p-4 shadow-md text-gray-700 shadow-slate-300 rounded-2xl bg-white w-36 text-lg font-semibold md:font-medium md:text-xl hover:-translate-y-3 duration-200;
+}
+
+.cities__container {
+  @apply flex flex-col md:flex-row justify-center items-center md:items-start md:justify-start space-y-10 md:space-y-0 md:space-x-24 flex-wrap p-8 md:p-0;
+}
+
+.cities__card {
+  @apply flex justify-center mx-auto md:mx-0 items-center md:justify-between md:space-x-8;
+}
